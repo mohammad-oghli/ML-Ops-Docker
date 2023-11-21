@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  image-classifier:
+    restart: unless-stopped
+    build: 
+      context: image-classifier
+      #dockerfile: ./Dockerfile
+    ports:
+      - "5000:5000" 
